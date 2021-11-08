@@ -1,5 +1,5 @@
 pause(1);
-
+%sdgfhgj
 brick.SetColorMode(3,2);
     
 color = brick.ColorCode(3);
