@@ -10,11 +10,11 @@ greenCount = 0;
 
 if color == 4
     
-    while color ~= 2 && blueCount < 8
+    while color ~= 2 && blueCount < 12
 
     distance = brick.UltrasonicDist(2);
 
-        while distance >= 30
+        while distance >= 25
 
             color = brick.ColorCode(3);
             disp(color);
@@ -51,10 +51,10 @@ if color == 4
 
         count = 0;
 
-        if distance <= 30
+        if distance <= 25
                 brick.MoveMotor('B', -33);
                 brick.MoveMotor('C', 30);
-                pause(0.62)
+                pause(0.65)
                 brick.StopMotor('B');
                 brick.StopMotor('C');
                 pause(0.2);
@@ -84,7 +84,7 @@ if color == 4
         if distance <= 30 && count > 1
             brick.MoveMotor('B', 33);
             brick.MoveMotor('C', -30);
-            pause(0.62)
+            pause(0.65);
             brick.StopMotor('B');
             brick.StopMotor('C');
         end

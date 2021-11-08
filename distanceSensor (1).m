@@ -59,11 +59,10 @@ if color == 4
                 brick.StopMotor('C');
                 pause(0.2);
                 count = count + 1;
-
-                distance = brick.UltrasonicDist(2);
-
         end
-
+        
+        distance = brick.UltrasonicDist(2);
+        
         if distance <= 50 && count > 0
 
                 brick.MoveMotor('B', 33);
