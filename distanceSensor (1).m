@@ -1,5 +1,5 @@
 pause(1);
-%sdgfhgj
+
 brick.SetColorMode(3,2);
     
 color = brick.ColorCode(3);
@@ -89,10 +89,6 @@ if color == 4
             brick.StopMotor('B');
             brick.StopMotor('C');
         end
-
-        distance = brick.UltrasonicDist(2);
-        
-        
         
     end
 
